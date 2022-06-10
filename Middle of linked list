@@ -5,7 +5,7 @@ public:
         ListNode *a, *b;
         a=head;
         b=head;
-        while(A && a->next)
+        while(a && a->next)
         {
             a=a->next->next;
             b=b->next;
