@@ -1,12 +1,9 @@
 class Solution {
 public:
-    int getDecimalValue(ListNode* head) 
-    {
+    int getDecimalValue(ListNode* head) {
         int r = 0;
-        while (head != NULL) 
-        {
-            r = r << 1;
-            r += head->val;
+        while (head) {
+            r = r * 2 + head->val;
             head = head->next;
         }
         return r;
